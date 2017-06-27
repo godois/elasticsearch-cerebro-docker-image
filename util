@@ -1,0 +1,15 @@
+
+docker kill $(docker ps -a -q) && docker rm $(docker ps -a -q)
+
+docker build -t godois/cerebro:1.0 .
+
+
+docker run -d -it --name cerebro-admin \
+    --net elasticsearch-net \
+    --ip 192.170.1.10 \
+    --hostname="cerebro.example.com" \
+    -p 9000:9000 \
+    godois/cerebro:1.0
+
+
+docker logs -f cerebro-admin
