@@ -1,2 +1,2 @@
-# clustered-elastisearch-docker-image
-A clustered Elasticsearch docker image allows you spinning up an Elasticsearch cluster in a few seconds.
+# elasticsearch-cerebro-docker-image
+A Elasticsearch Cerebro docker image allows you administrate an Elasticsearch cluster from a web interface.
